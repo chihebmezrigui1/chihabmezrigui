@@ -223,6 +223,7 @@ section {
   color: #fff;
   padding: 1rem 0;
   font-weight: normal;
+  text-transform: lowercase;
 }
 
 .about .row .info-container .box-container .box h3 span {
