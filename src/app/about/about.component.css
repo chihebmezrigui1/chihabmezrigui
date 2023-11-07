@@ -223,17 +223,7 @@ section {
   color: #fff;
   padding: 1rem 0;
   font-weight: normal;
-}
-.about .row .info-container .box-container .box1 h3 {
-  font-size: 1.0rem;
-  color: #fff;
-  padding: 1rem 0;
-  font-weight: normal;
   text-transform: lowercase;
-}
-.about .row .info-container .box-container .box1 h3 span {
-  color: #aaa;
-  font-weight: lighter;
 }
 
 .about .row .info-container .box-container .box h3 span {
