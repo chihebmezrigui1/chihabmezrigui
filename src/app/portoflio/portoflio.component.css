@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
   outline: none;
   border: none;
@@ -35,7 +35,7 @@ body {
 }
 
 section {
-  padding: 0rem 7%;
+  padding: 2rem 7%;
 }
 
 .heading {
@@ -56,10 +56,9 @@ section {
   margin-top: 0.8rem;
   border-radius: 4.0rem;
   background: #f79c1b;
-  padding: .2rem;
+  padding: .8rem 1.8rem;
   font-size: 1.3rem;
   color: #fff;
-  padding-left: 1.8rem;
 }
 
 .btn i {
@@ -72,7 +71,6 @@ section {
   color: #f79c1b;
   border-radius: 50%;
   margin-left: 0.9rem;
-  -webkit-transition: .2s linear;
   transition: .2s linear;
 }
 
@@ -80,37 +78,31 @@ section {
   margin-left: 1.9rem;
 }
 
-
 .portfolio {
   text-align: center;
 }
 
 .portfolio .box-container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
   gap: 1.2rem;
   margin-bottom: 2rem;
 }
 
 .portfolio .box-container .box {
   height: 30rem;
-  
-  overflow:hidden;
+  overflow: hidden;
   position: relative;
 }
 
 .portfolio .box-container .box:hover .content {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 .portfolio .box-container .box img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .portfolio .box-container .box .content {
@@ -120,23 +112,12 @@ section {
   height: 100%;
   width: 100%;
   background: #1a1a1a;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 2rem;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  -webkit-transition: .2s linear;
+  transform: translateY(-100%);
   transition: .2s linear;
 }
 
@@ -163,5 +144,88 @@ section {
   color: #fff;
 }
 
+/* Media Queries for Responsiveness */
 
+@media (max-width: 1200px) {
+  .heading {
+    font-size: 5vw;
+  }
+}
 
+@media (max-width: 992px) {
+  section {
+    padding: 2rem 5%;
+  }
+
+  .heading {
+    font-size: 4.5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 5rem;
+  }
+
+  .portfolio .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+
+  .portfolio .box-container .box {
+    height: 25rem;
+  }
+
+  .portfolio .box-container .box .content h3 {
+    font-size: 2rem;
+  }
+
+  .portfolio .box-container .box .content p {
+    font-size: 1.4rem;
+  }
+
+  .portfolio .box-container .box .content a {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  section {
+    padding: 2rem 2%;
+  }
+
+  .heading {
+    font-size: 4rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding: .6rem 1.5rem;
+  }
+
+  .btn i {
+    height: 2.5rem;
+    width: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .portfolio .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+
+  .portfolio .box-container .box {
+    height: 20rem;
+  }
+
+  .portfolio .box-container .box .content h3 {
+    font-size: 1.8rem;
+  }
+
+  .portfolio .box-container .box .content p {
+    font-size: 1.2rem;
+  }
+
+  .portfolio .box-container .box .content a {
+    font-size: 1.6rem;
+  }
+}
