@@ -119,9 +119,7 @@ section {
 
 .home .image img {
   height: 30rem;
-  width: 30rem;
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
- 
+  width: 30rem; 
 }
 
 .home .content {
