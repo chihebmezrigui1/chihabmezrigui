@@ -25,7 +25,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #138cdc;
+  background: #f79c1b;
   border-radius: 5rem;
 }
 
@@ -63,12 +63,12 @@ body {
 }
 
 .navbar a i {
-  color: #138cdc;
+  color: #f79c1b;
   padding-right: .5rem;
 }
 
 .navbar a:hover {
-  background: #138cdc;
+  background: #f79c1b;
   padding-bottom: 3rem;
 }
 
