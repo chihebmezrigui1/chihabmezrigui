@@ -122,7 +122,7 @@ section {
 }
 
 .portfolio .box-container .box .content h3 {
-  font-size: 2.5rem;
+  font-size: 2rem; /* Réduction de la taille du titre */
   color: #fff;
   text-transform: uppercase;
   font-weight: normal;
@@ -130,20 +130,19 @@ section {
 
 .portfolio .box-container .box .content p {
   padding: 1rem 0;
-  font-size: 1.5rem;
-  line-height: 2;
+  font-size: 1.2rem; /* Réduction de la taille du paragraphe */
+  line-height: 1.8; /* Ajustement de l'espacement entre les lignes */
   color: #aaa;
 }
 
 .portfolio .box-container .box .content a {
-  font-size: 2rem;
+  font-size: 1.5rem; /* Réduction de la taille du lien */
   color: #f79c1b;
 }
 
 .portfolio .box-container .box .content a:hover {
   color: #fff;
 }
-
 /* Media Queries for Responsiveness */
 
 @media (max-width: 1200px) {
