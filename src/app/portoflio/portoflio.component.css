@@ -84,13 +84,13 @@ section {
 
 .portfolio .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); /* Diminue la largeur minimale des colonnes */
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Diminue la largeur minimale des colonnes */
   gap: 1.2rem;
   margin-bottom: 2rem;
 }
 
 .portfolio .box-container .box {
-  height: 25rem; /* Réduire la hauteur de chaque box */
+  height: 15rem; /* Réduire la hauteur de chaque box */
   overflow: hidden;
   position: relative;
 }
